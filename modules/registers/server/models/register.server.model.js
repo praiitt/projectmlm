@@ -21,7 +21,7 @@ var RegisterSchema = new Schema({
     trim: true
   },
   e_pin: {
-    type: String,
+    type: Number,
     trim: true
   },
 
@@ -67,10 +67,12 @@ var RegisterSchema = new Schema({
     trim: true
   },
   city: {
-    type: String
+    type: String,
+    trim: true
   },
   state: {
-    type: String
+    type: String,
+    trim: true
   },
   zip_code: {
     type: Number,

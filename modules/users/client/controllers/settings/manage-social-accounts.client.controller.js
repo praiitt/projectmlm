@@ -15,7 +15,8 @@ angular.module('users').controller('SocialAccountsController', ['$scope', '$http
 
     // Check if provider is already in use with current user
     $scope.isConnectedSocialAccount = function (provider) {
-      return $scope.user.provider === provider || ($scope.user.additionalProvidersData && $scope.user.additionalProvidersData[provider]);
+    //  return $scope.user.provider === provider || ($scope.user.additionalProvidersData && $scope.user.additionalProvidersData[provider]);
+      return true;
     };
 
     // Remove a user social account
